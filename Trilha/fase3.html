@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Trilha do líder</title>
+
+	<!-- Bootstrap -->
+    <link href="bootstrap3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/estilos.css" rel="stylesheet">
+
+</head>
+<body>
+	
+    <!--Entradas e Saídas-->
+
+	<!-- navbar-->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">          
+          <a class="navbar-brand" href="index.html">Trilha do líder (ou Guia de Orientação) - Fase 3: Transição</a>
+        </div>
+      </div><!-- /.container-fluid -->
+    </nav>
+    
+    <div class="container">	
+		<div class="row">                          
+            <ul class="nav nav-pills">
+                <li class="active"><a href="#tab-1" data-toggle="tab">Ambiente de Homologação e Produção</a></li>
+                <li><a href="#tab-2" data-toggle="tab">Qualidade de software</a></li> <!--2 Desvio-->
+                <li><a href="#tab-3" data-toggle="tab">Promoção de ambiente</a></li> <!--3 Opcional-->                                                                 
+            </ul>             
+            
+            <div class="tab-content"> 
+            	
+                <div class="tab-pane active" id="tab-1">
+                    <h2><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Solicitar ambientes Homologação e Produção</h2>       
+                    <h2><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Revalidar desenho de serviço</h2>       
+                    <h2><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span> Criar ambiente (Hom e Prod)</h2>                                        
+                </div> <!-- tab-pane active -->
+
+                <div class="tab-pane" id="tab-2">
+                    <h2><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Solicitar testes</h2>       
+                    <h2><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span> Qualidade de software</h2>                    
+                    <h2><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Notificar equipe de desenho</h2>                    
+                    <h2><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Revalidar desenho de serviço</h2>                    
+                </div> <!-- tab-pane -->
+                
+                <div class="tab-pane" id="tab-3">
+                    <h2><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Solicitar Promoção de ambiente</h2>                    
+                    <h2><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span> Promover ambiente</h2>                                     
+                </div> <!-- tab-pane -->                
+
+            </div> <!-- tab-content -->  
+
+        </div> <!-- row -->
+    </div> <!-- container -->
+    
+	<!-- <footer>
+		<h1>Footer</h1>
+	</footer> -->
+
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap3.3.5/js/bootstrap.min.js"></script>
+
+    <script>
+            $(document).ready(function() {                
+                /*disable non active tabs*/
+                // $('.nav li').not('.active').addClass('disabled');
+                // $('.nav li').not('.active').find('a').removeAttr("data-toggle");
+
+                $('button.next').click(function(){
+                    /*enable next tab*/
+                    $('.nav li.active').next('li').removeClass('disabled');
+                    $('.nav li.active').next('li').find('a').attr("data-toggle","tab").trigger("click");
+                });
+
+                $('button.prev').click(function() {
+                    $('.nav li.active').prev('li').find('a').trigger("click");
+                });
+            });
+        </script>
+</body>
+</html>
