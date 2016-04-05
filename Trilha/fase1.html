@@ -30,27 +30,25 @@
 		<div class="row">                          
             <ul class="nav nav-pills">
                 <li class="active"><a href="#tab-1" data-toggle="tab">Idealização</a></li> <!--1 Inicial-->
-                <li><a href="#tab-2" data-toggle="tab">Processo de mudança</a></li> <!--2 Desvio-->
+                <li><a href="#tab-2" data-toggle="tab">Mudança</a></li> <!--2 Desvio-->
                 <li><a href="#tab-3" data-toggle="tab">Desenho da solução</a></li> <!--3 Opcional-->
-                <li><a href="#tab-4" data-toggle="tab">Reunião de alinhamento</a></li> <!--4 Obrigatório-->
-                <li><a href="#tab-5" data-toggle="tab">Gerenciamento da demanda</a></li> <!--5 Opcional Integração (?!) -->
-                <li><a href="#tab-6" data-toggle="tab">Plano de ação</a></li> <!--6 Obrigatório-->	                                                        
+                <li><a href="#tab-4" data-toggle="tab">Reunião de alinhamento</a></li> <!--4 Obrigatório-->                
             </ul>             
             
             <div class="tab-content"> 
-            	
-                <div class="well well-lg">
-                    <h2>Idealização</h2>
-                    <p>
-                        Explicar o que é
-                    </p>
-                    <p>
-                        Colocar o mapa de estação ou imagem do processo com as atividades destacadas.
-                    </p>
-                </div> <!--well well-lg-->
-                
-                
+                               
                 <div class="tab-pane active" id="tab-1">
+
+                    <div class="well well-lg">
+                        <h2>Idealização</h2>
+                        <p>
+                            Explicar o que é
+                        </p>
+                        <p>
+                            Colocar o mapa de estação ou imagem do processo com as atividades destacadas.
+                        </p>
+
+                    </div> <!--well well-lg-->
                     
                     <!--1. Entender Ideia (1-1-1)-->
                     <div class="panel-group" id="accordion-1-1-1" role="tablist" aria-multiselectable="true">
@@ -65,10 +63,34 @@
                           <div id="collapse-1-1-1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="1-1-1">                            
                             <div class="panel-body">
                                 <h4>Descrição</h4>
+                                <p>
+                                    Essa é a primeira atividade que deve ser executada pelo analista de negócio da CTA quando solicitado pelo cliente. Nessa entrevista deve ser preenchido o formulário de entrevista que serve de orientação para o analista, além de padronizar as entradas de demandas na IplanRio.
+                                </p>
+
                                 <h4>Papéis e responsabilidades</h4>
+                                <table class="table table-bordered">
+                                    <tr>
+                                        <th>Quem produz entrada</th>
+                                        <th>Quem recebe entrada</th>
+                                        <th>Quem produz saída</th>
+                                        <th>Quem recebe saída</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Cliente (do órgão)</td>
+                                        <td>Analista de negócios CTA/Líder</td>
+                                        <td>Analista de negócios CTA/Líder</td>
+                                        <td>Equipe Desenho de Serviço</td>
+                                    </tr>
+                                </table>
+
                                 <h4>Entradas</h4>
+                                <p>Solicitação de reunião</p>
+
                                 <h4>Saídas</h4>
+                                <p>Formulário de entrevista preenchido</p>
+
                                 <h4>Links importantes</h4>
+                                <p><a href="http://iplanet.rio.rj.gov.br/images/formulariodeentrevista.doc"><span class="glyphicon glyphicon-save" aria-hidden="true"></span> Formulário de Entrevista</a></p>
                                 <!--Conteúdo do processo/atividade-->
                             </div> <!--panel-body-->
                           </div> <!--panel-collapse collapse-->
@@ -88,10 +110,49 @@
                           <div id="collapse-1-1-2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="1-1-2">                            
                             <div class="panel-body">
                                 <h4>Descrição</h4>
+                                <p>
+                                    O analista de negócio deve solicitar a reunião de alinhamento através do e-mail novoservico@iplanrio.rio.rj.gov.br que envia automaticamente e-mails de convocação para as seguintes áreas da IplanRio:
+                                </p>
+                                <ul>
+                                    <li>Administração de Dados</li>
+                                    <li>Gerência de Qualidade</li>
+                                    <li>Liberação</li>
+                                    <li>Consultores</li>
+                                    <li>Arquitetos</li>
+                                </ul>
+                                <p>A Equipe de Desenho de Serviço é responsável por entender a demanda e decidir o tipo de reunião ficando a cargo de cada área avaliar a necessidade de sua presença na reunião. A seguir seguem as possíveis opções:</p>
+                                <ul>
+                                    <li>No caso de mudanças será iniciado o subprocesso Executar Mudança (a ser definido posteriormente)</li>
+                                    <li>Para o caso de produto pronto será convocada uma reunião de alinhamento, focada na implantação do produto em produção.</li>
+                                    <li>Para o caso da demanda relacionada a um sistema a ser definido e desenvolvido do zero, onde é solicitada a ajuda dos especialistas da IplanRio, deve ser iniciado o subprocesso Desenhar Solução.</li>
+                                    <li>Para o caso do sistema a ser desenvolvido onde não é necessária a ajuda dos especialistas, será convocada uma reunião de alinhamento com foco na criação do ambiente de desenvolvimento.</li>                                    
+                                </ul>
+                                
                                 <h4>Papéis e responsabilidades</h4>
+                                <table class="table table-bordered">
+                                    <tr>
+                                        <th>Quem produz entrada</th>
+                                        <th>Quem recebe entrada</th>
+                                        <th>Quem produz saída</th>
+                                        <th>Quem recebe saída</th>
+                                    </tr>
+                                    <tr>
+                                        <td>CTA – Analista de negócios / Líder</td>
+                                        <td>Equipe Desenho de Serviço</td>
+                                        <td>Equipe Desenho de Serviço</td>
+                                        <td>Participantes da reunião</td>
+                                    </tr>
+                                </table>
+
                                 <h4>Entradas</h4>
+                                <p>Solicitação de reunião de alinhamento e informações sobre a demanda</p>
+
                                 <h4>Saídas</h4>
+                                <p>Orientações sobre os formulários necessários e confirmação de reunião</p>
+
+                                
                                 <h4>Links importantes</h4>
+                                <p>[link para orientador]</p>
                                 <!--Conteúdo do processo/atividade-->
                             </div> <!--panel-body-->
                           </div> <!--panel-collapse collapse-->
@@ -113,23 +174,138 @@
                 </div> <!-- tab-pane active -->
 
                 <div class="tab-pane" id="tab-2">
-                    <h2><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span> Executar mudança</h2>                    
+                    <div class="well well-lg">
+                        <h2>Mudança</h2>
+                        <p>
+                            Explicar o que é
+                        </p>
+                        <p>
+                            Colocar o mapa de estação ou imagem do processo com as atividades destacadas.
+                        </p>
+                    </div> <!--well well-lg-->
+
+                    <!--2. Mudança (1-2-1)-->
+                    <div class="panel-group" id="accordion-1-2-1" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-info">
+                          <div class="panel-heading"  role="tab" id="1-2-1">
+                            <h3 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion-1-2-1" href="#collapse-1-2-1" aria-expanded="true" aria-controls="collapse-1-2-1">
+                                    <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span> Executar mudança
+                                </a>
+                            </h3>
+                          </div> <!--panel-heading-->
+                          <div id="collapse-1-2-1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="1-2-1">                            
+                            <div class="panel-body">
+                                <h4>Descrição</h4>
+                                <br />
+                                
+                                <h4>Papéis e responsabilidades</h4>
+                                <table class="table table-bordered">
+                                    <tr>
+                                        <th>Quem produz entrada</th>
+                                        <th>Quem recebe entrada</th>
+                                        <th>Quem produz saída</th>
+                                        <th>Quem recebe saída</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Equipe de Desenho</td>
+                                        <td>Equipe de Mudança</td>
+                                        <td>Equipe de Mudança</td>
+                                        <td>-</td>
+                                    </tr>
+                                </table>
+
+                                <h4>Entradas</h4>
+                                <p>Solicitação de reunião</p>
+
+                                <h4>Saídas</h4>
+                                <p>-</p>
+
+                                
+                                <h4>Links importantes</h4>
+                                <p>-</p>
+                                <!--Conteúdo do processo/atividade-->
+                            </div> <!--panel-body-->
+                          </div> <!--panel-collapse collapse-->
+                        </div> <!--panel panel-default-->
+                    </div> <!--panel-group-->                    
+
                 </div> <!-- tab-pane -->
                 
                 <div class="tab-pane" id="tab-3">
-                    <h2><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span> Desenhar solução</h2>                                     
+                    <div class="well well-lg">
+                        <h2>Desenho da solução</h2>
+                        <p>
+                            Explicar o que é
+                        </p>
+                        <p>
+                            Colocar o mapa de estação ou imagem do processo com as atividades destacadas.
+                        </p>
+                    </div> <!--well well-lg-->
+
+                    <!--1. Desenhar Solução (1-3-1)-->
+                    <div class="panel-group" id="accordion-1-1-1" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-info">
+                          <div class="panel-heading"  role="tab" id="1-3-1">
+                            <h3 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion-1-3-1" href="#collapse-1-3-1" aria-expanded="true" aria-controls="collapse-1-3-1">
+                                    <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span> Desenhar solução
+                                </a>
+                            </h3>
+                          </div> <!--panel-heading-->
+                          <div id="collapse-1-3-1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="1-3-1">                            
+                            <div class="panel-body">
+                                <h4>Descrição</h4>
+                                <p>
+                                    Nesse processo serão convocadas quantas reuniões forem necessárias até que o analista de negócio tenha subsídios para finalizar a sua proposta de solução, que será apresentada ao cliente. Para isso são convocados os especialistas com o perfil necessário para cada reunião e etapa do processo.
+                                </p>
+
+                                <h4>Papéis e responsabilidades</h4>
+                                <table class="table table-bordered">
+                                    <tr>
+                                        <th>Quem produz entrada</th>
+                                        <th>Quem recebe entrada</th>
+                                        <th>Quem produz saída</th>
+                                        <th>Quem recebe saída</th>
+                                    </tr>
+                                    <tr>
+                                        <td>CTA – Analista de negócios / Líder</td>
+                                        <td>Equipe de Desenho de Serviço</td>
+                                        <td>CTA – Analista de negócios / Líder</td>
+                                        <td>Subprocesso de Gerenciamento de Demanda</td>
+                                    </tr>
+                                </table>
+
+                                <h4>Entradas</h4>
+                                <p>Solicitação de reunião, Formulário de Entrevista, e outros documentos.</p>
+
+                                <h4>Saídas</h4>
+                                <p>Proposta de Solução </p>
+
+                                <h4>Links importantes</h4>
+                                <p>[Link para perfis de especialistas na Iplanet]</p>
+                                <!--Conteúdo do processo/atividade-->
+                            </div> <!--panel-body-->
+                          </div> <!--panel-collapse collapse-->
+                        </div> <!--panel panel-default-->
+                    </div> <!--panel-group-->
+
+
+                                                 
                 </div> <!-- tab-pane -->
 
                 <div class="tab-pane" id="tab-4">
-                    <h2><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Realizar reunião de alinhamento</h2>                                     
-                </div> <!-- tab-pane -->
-
-                <div class="tab-pane" id="tab-5">
-                    <h2><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span> Gerenciamento da demanda</h2>                                     
-                </div> <!-- tab-pane -->
-
-                <div class="tab-pane" id="tab-6">
-                    <h2><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Plano de ação</h2>                                     
+                    <div class="well well-lg">
+                        <h2>A reunião de alinhamento</h2>
+                        <p>
+                            Explicar o que é
+                        </p>
+                        <p>
+                            Colocar o mapa de estação ou imagem do processo com as atividades destacadas.
+                        </p>
+                    </div> <!--well well-lg-->
+                    <h2><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Realizar reunião de alinhamento</h2>       
+                    <h2><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Plano de ação</h2>                               
                 </div> <!-- tab-pane -->
 
             </div> <!-- tab-content -->  
